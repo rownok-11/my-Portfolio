@@ -1,0 +1,252 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== Body ===== */
+body {
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ===== Reusable Container ===== */
+.container,
+.content {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ===== Header ===== */
+.header header {
+    background: #0b0f14;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* ===== Logo ===== */
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #00ffcc;
+}
+
+/* ===== Header Title ===== */
+.header h1 {
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+/* ===== Navigation ===== */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ffcc;
+}
+
+/* ===== Hero Section ===== */
+.Hero-Section {
+    background: linear-gradient(135deg, #084866, #378857, #074652);
+    color: #fff;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.Hero-Section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.Hero-Section p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ===== About Section ===== */
+.About {
+    background: #ffffff;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.About h2 {
+    margin-bottom: 15px;
+}
+
+/* ===== Skills Section ===== */
+.Skills {
+    padding: 70px 20px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill {
+    background: #0b0f14;
+    color: #0ebb98;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+/* ===== Projects Section ===== */
+.Project-section {
+    background: #ffffff;
+    padding: 70px 20px;
+}
+
+.Project-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0077ff;
+    text-decoration: none;
+}
+
+/* ===== Blog Section ===== */
+.blog-section {
+    padding: 70px 20px;
+}
+
+.blog-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.blog-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #00ffcc;
+}
+
+.blog-card a {
+    color: #0077ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===== Contact Section ===== */
+.contact-section {
+    background: #0b0f14;
+    color: #ffffff;
+    padding: 70px 20px;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact-section form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.contact-section textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-section button {
+    padding: 12px;
+    background: #00ffcc;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #000;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .header .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Hero-Section h2 {
+        font-size: 28px;
+    }
+}
