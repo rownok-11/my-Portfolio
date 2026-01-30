@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.blog-header {
+  background-color: #1e90ff;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.blog-header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.blog-content {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.blog-content p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.blog-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.comments {
+  margin-top: 40px;
+}
+
+.comments h2 {
+  margin-bottom: 20px;
+}
+
+.comments form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comments input, 
+.comments textarea {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.comments button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  background-color: #1e90ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comments button:hover {
+  background-color: #00bfff;
+}
+
+.comment {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.comment strong {
+  display: block;
+  color: #1e90ff;
+  margin-bottom: 5px;
+}
+.iconArea{
+	position:fixed;
+	left: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 20px;
+	background-color: #FFFFFF;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	padding: 5px 0px;
+	z-index: 1;
+}
+
+
+
+.iconArea a{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 15px;
+}
+
+.iconArea a i{
+	color:rgba(39,39,39,0.80);
+}
+ 
+.iconArea a:hover .fa-facebook-f{
+	color: #3b5998;
+}
+.iconArea a:hover .fa-twitter{
+	color: #00acee ;
+}
+.iconArea a:hover .fa-instagram{
+	color:  #3f729b ;
+}
+.iconArea a:hover .fa-youtube{
+ 
+	color: 	#FF0000;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  border-top: 3px solid #1e90ff;
+}
+

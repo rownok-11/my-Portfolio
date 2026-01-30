@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Blog</title>
+<link rel="stylesheet" href="blog1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="blog-header">
+    <h1>Is Your Personal Data Safe?</h1>
+  </header>
+
+  <main class="blog-content">
+    <article>
+      <p>
+        The Dark Side of E-commerce Convenience
+In today's digital era, online shopping has become a daily necessity. From groceries to gadgets, everything is just a click away. However, as e-commerce platforms grow, so do the risks. Despite how "secure" a platform claims to be, the reality is that no system is 100% unhackable.
+      </p>
+      <p>
+The Million Dollar Question: Who Suffers When a Breach Occurs?
+When a platform is compromised, the company might lose its reputation, but the user loses their hard-earned money. Most platforms require your credit card details and passwords to complete a transaction. This is exactly where the danger lies. Hackers don't just "stumble" upon data; they meticulously plan how to exploit financial information. Within minutes of a breach—before you even receive a notification—your bank account could be drained.
+The Dead End: Where Does the Money Go?
+Hackers typically funnel stolen funds into online gambling or trading platforms in countries where these activities are legal. Once the money is converted into Bitcoin (BTC) or other cryptocurrencies via Blockchain technology, it becomes nearly impossible to recover. Without the specific private keys, even the most advanced authorities cannot reverse the transaction.
+The Reality Check: Encrypted Doesn't Mean Unbreakable
+I recently conducted a security test on a well-known e-commerce platform and was shocked to find how easily I could access user data, including Gmail passwords and backup account information.
+Many people believe that because passwords are "encrypted," they are safe. However, weak encryption can be decoded with the right tools. I have already notified the concerned organization about these vulnerabilities, but whether they take action remains to be seen.
+      </p>
+      <img src="blog2.jpeg" alt="Blog Image">
+      <p>
+      How to Protect Yourself: Pro-Tips for Online Safety
+Avoid Uniform Passwords: Never use the same password for your banking, email, and shopping accounts.
+Enable Two-Factor Authentication (2FA): This is your strongest secondary line of defense.
+Use Virtual or Prepaid Cards: For online transactions, use cards with a fixed limit to minimize potential loss.
+Verify Before You Buy: Check the security protocols and reviews of a website before entering sensitive information.
+Final Thought: No matter how strong a security system is, hackers are always finding new backdoors. Stay alert, stay skeptical, and stay safe.
+      </p>
+    </article>
+
+    <section class="comments">
+      <h2>Comments</h2>
+      <form id="commentForm">
+        <input type="text" id="username" placeholder="Your Name" required>
+        <textarea id="comment" placeholder="Your comment..." required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+      <div id="commentList"></div>
+    </section>
+  </main>
+<div class="iconArea">
+      <a href="mailto:raisulislamrownok7@gmail.com.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/ri_rownok/"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+</div>
+<div class="heding">
+  <footer>
+    <p>&copy; 2026 My Blog. All Rights Reserved.</p>
+  </footer>
+
+<script>
+const form = document.getElementById("commentForm");
+const commentList = document.getElementById("commentList");
+
+form.addEventListener("submit", function(e){
+  e.preventDefault();
+  const name = document.getElementById("username").value;
+  const comment = document.getElementById("comment").value;
+
+  const commentDiv = document.createElement("div");
+  commentDiv.classList.add("comment");
+  commentDiv.innerHTML = `<strong>${name}</strong><p>${comment}</p>`;
+  commentList.appendChild(commentDiv);
+
+  form.reset();
+});
+</script>
+</body>
+</html>
