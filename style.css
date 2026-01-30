@@ -238,7 +238,7 @@ footer {
 
 .iconArea{
 	position:fixed;
-	left: 30px;
+	left: 2px;
 	top: 50%;
 	transform: translateY(-50%);
 	border-radius: 20px;
