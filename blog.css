@@ -163,18 +163,37 @@ footer p {
  
 	color: 	#FF0000;
 }
-/* Small devices (mobile) */
+/* ===== Small devices (mobile) - Fixed ===== */
 @media screen and (max-width: 600px) {
   .blog {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 30px !important; 
+    padding: 10px 0 !important;
   }
+
   .blog1 {
-    width: 90%;
+    width: 95% !important; 
+    margin-bottom: 10px !important; 
+    display: flex;
+    flex-direction: column;
   }
+
   .heding h2 {
-    font-size: 24px;
-    padding: 8px 15px;
+    font-size: 22px;
+    padding: 10px 15px;
+    width: auto;
+    margin: 20px 10px;
+  }
+  
+  
+  .iconArea {
+    padding: 2px 0;
+    left: 0;
+  }
+  
+  .iconArea a {
+    padding: 12px 8px;
   }
 }
