@@ -277,19 +277,48 @@ footer {
 }
 
 
-/* ===== Responsive ===== */
+/* ===== Responsive Section ===== */
 @media (max-width: 768px) {
     .header .content {
         flex-direction: column;
         text-align: center;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .header h1 {
+        white-space: normal;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
     }
 
     nav ul {
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    nav ul li a {
+        padding: 5px 8px;
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    .Hero-Section {
+        padding: 60px 15px;
     }
 
     .Hero-Section h2 {
-        font-size: 28px;
+        font-size: 26px;
+    }
+
+    .iconArea {
+        padding: 2px 0;
+    }
+
+    .iconArea a {
+        padding: 12px 10px;
     }
 }
